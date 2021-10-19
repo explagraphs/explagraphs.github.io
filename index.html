@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ExplaGraphs Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    
+<meta name="google-site-verification" content="h3zCtOJy9KzG1XWf5-3ppU1liaJ8NkpGvK_BbOOq3-4" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org/",
+  "@type":"Dataset",
+  "name":"ExplaGraphs: An Explanation Graph Generation Task for Structured Commonsense Reasoning",
+  "description":"HotpotQA is a question answering dataset featuring natural, multi-hop questions, with strong supervision for supporting facts to enable more explainable question answering systems built based on Wikipedia.",
+  "url":"https://explagraphs.github.io/",
+  "keywords":[
+     "Fact checking",
+     "Information Retrieval",
+     "Natural Language Processing",
+     "Multi-hop Reasoning",
+     "Explainable Artificial Intelligence"
+  ],
+  "creator":{
+     "@type":"Organization",
+     "url": "https://hover-nlp.github.io/",
+     "name":"University of North Carolina at Chapel Hill",
+     "contactPoint":{
+        "@type":"ContactPoint",
+        "contactType": "customer service",
+        "url":"https://https://www.jiang-yichen.io/",
+        "email":"yichenj@cs.unc.edu"
+     }
+  },
+  "distribution":[
+     {
+        "@type":"DataDownload",
+        "encodingFormat":"JSON",
+        "contentUrl":"http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
+     },
+     {
+        "@type":"DataDownload",
+        "encodingFormat":"JSON",
+        "contentUrl":"http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json"
+     },
+     {
+        "@type":"DataDownload",
+        "encodingFormat":"JSON",
+        "contentUrl":"http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_fullwiki_v1.json"
+     },
+     {
+        "@type":"DataDownload",
+        "encodingFormat":"JSON",
+        "contentUrl":"http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_test_fullwiki_v1.json"
+     }
+  ]
+}
+</script>
+
+  </head>
+
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ExplaGraphs</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+<!--         <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li> -->
+<!--         <li class="nav-item">
+          <a class="nav-link" href="explorer.html">Explorer</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Page Header -->
+<!--<header class="masthead" style="background-image: url('img/004D92.jpeg')">-->
+<header class="masthead" style="background-image: url('img/carolina-blue.png')">
+  <div class="container" style="height:400px">
+    <div class="row ">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <div class="logo">
+            <img src="img/explagraphs-example.png" alt="logo" style="height:250px;top:-100px;"/>
+          </div>
+<!--           <h1>HoVer</h1>
+ -->          <span class="subheading logo">An Explanation <span class="line">Graph Generation Task for</span> <span class="line">Structured Commonsense Reasoning</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    
+<!-- Main Content -->
+<div class="container" id="main">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="list-group">
+        <div class="list-group-item"><h4>What is ExplaGraphs?</h4>
+        <p>ExplaGraphs is a generative and structured commonsense reasoning task of generating explanation graphs for stance prediction. For a belief about a popular debate topic and an argument either supporting or refuting the belief, ExplaGraphs contains the corresponding commonsense-augmented explanation graphs that serve as non-trivial, complete, and unambiguous explanations for the stance. It is collected by a team of NLP researchers at <a href="https://murgelab.cs.unc.edu/">UNC Chapel Hill</a>.</p>
+        <p>For more details about ExplaGraphs, please refer to our EMNLP 2021 paper:</p>
+        <p class="text-center">
+          <a href="https://arxiv.org/abs/2104.07644"><button type="button" class="btn btn-info">(Saha, et al. 2020)</button></a>
+        </p>
+        </div>
+        <div class="list-group-item"><h4>Getting started</h4>
+        <p>ExplaGraphs is distributed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>. The training and development sets can be downloaded below.</p>
+        <p class="text-center">
+          <a href="https://github.com/swarnaHub/ExplaGraphs/blob/main/data/train.tsv"><button type="button" class="btn btn-success">Training set</button></a>
+        </p>
+        <p class="text-center">
+          <a href="https://github.com/swarnaHub/ExplaGraphs/blob/main/data/dev.tsv"><button type="button" class="btn btn-secondary">Dev set</button></a>
+        </p>
+<!--        <p class="text-center">-->
+<!--          <a href="https://github.com/swarnaHub/ExplaGraphs/blob/main/data/test.tsv"><button type="button" class="btn btn-secondary">Test set (Belief, Argument only)</button></a>-->
+<!--        </p>-->
+<!--         <p>A more comprehensive summary about data download, preprocessing, baseline model training, and evaluation is included in our <a href="https://github.com/hover-nlp/hover">GitHub repository</a>, and linked below.
+        <p class="text-center">
+          <a href="https://github.com/hotpotqa/hotpot/blob/master/README.md"><button type="button" class="btn btn-secondary">Getting started guide</button></a>
+        </p> -->
+        <!-- <p>
+        Once you have built your model, you can use the evaluation script we provide below to evaluate model performance by running <code>python hotpot_evaluate_v1.py &lt;path_to_prediction&gt; &lt;path_to_gold&gt;</code>
+        </p>
+        <p class="text-center">
+          <a href="https://raw.githubusercontent.com/hotpotqa/hotpot/master/hotpot_evaluate_v1.py"><button type="button" class="btn btn-secondary">Evaluation script (4.2KB)</button></a>
+        </p> -->
+        
+        <p>To evaluate your model on the test set, please send us your model, a detailed README with the environment and a script to generate the predictions at swarna@cs.unc.edu. Please refer to the sample prediction format below. Note that each line in the predictions file should contain two tab-separated entries, first the stance prediction followed by the explanation graph. The graph should be represented in the form of concatenated edges as in the original train and dev splits. Please refer to the sample prediction file below.</p>
+        <p class="text-center">
+          <a href="https://github.com/swarnaHub/ExplaGraphs/blob/main/data/preds.tsv"><button type="button" class="btn btn-secondary">Sample test prediction</button></a>
+        </p>
+<!--         <p class="text-center">
+          <a href="https://worksheets.codalab.org/worksheets/0xa8718c1a5e9e470e84a7d5fb3ab1dde2/"><button type="button" class="btn btn-info">Submission Guide</button></a>
+        </p> -->
+        <p>
+<!--        We use the Wikipedia data processed by the HotpotQA team to construct the dataset. Please use it as the corpus for the document retrieval as other versions of Wikipedia might have different content.-->
+        <!-- We also release the processed Wikipedia used in the process of creating HotpotQA (also under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>), serving both as the corpus for the <em>fullwiki</em> setting in our evaluation, and hopefully as a standalone resource for future researches involving processed text on Wikipedia. Below please find the link to the documentation for this corpus. -->
+<!--        </p>-->
+<!--        <p class="text-center">-->
+<!--          <a href="https://hotpotqa.github.io/wiki-readme.html"><button type="button" class="btn btn-info">Processed Wikipedia README</button></a>-->
+<!--        </p>-->
+        </div>
+        <div class="list-group-item"><h4>Evaluation</h4>
+          Our paper proposes a evaluation pipeline in Section 6, consisting of three levels. In the first level, we evaluate for stance correctness. In the next level, we compute the accuracy of structurally correct graphs. Note that this requires that all the constraints we define in our paper be exactly satisfied for an explanation graph to be valid. You should not look to boost up this accuracy by some arbitrary post-hoc correction of structurally incorrect graphs (like adding a random edge to make a disconnected graph connected). A systematic way to incorporate constraints in the model (similar to our structured model) is, however, fine. Finally, in the last level, we take the structurally correct graphs and evaluate for semantic correctness and various graph matching metrics. Please refer to the evaluation scripts below.
+<!--          As explained in the Sec 5.5 of the paper, the HoVer score is the percentage of examples where the model must retrieve at least one supporting fact from every supporting document and predict the correct label. However, this doesn't mean submitting a large number of supporting facts can boost up the score. When calculating the HoVer score for a k-hop example, we are only gonna consider supporting facts (sentences) from the first k+1 documents retrieved by your model. For each document considered, we are only gonna evaluate the top-2 selected sentences. So remember to rank your retrieved supporting facts!-->
+
+<!--          Please refer to our evaluation script provided below for calculating the supporting-fact F1 score and HoVer score (Coming Soon).-->
+        <p class="text-center">
+          <a href="https://github.com/swarnaHub/ExplaGraphs/tree/main/metrics"><button type="button" class="btn btn-secondary">Evaluation script</button></a>
+        </p>
+        </div>
+        <div class="list-group-item"><h4>Citation</h4>
+<!--         <p>Join our <a href="https://groups.google.com/d/forum/hotpotqa">Google group</a> to receive updates or initiate discussions about HotpotQA!</p>
+ -->        <p>If you use ExplaGraphs in your research, please cite our paper with the following BibTeX entry</p>
+        <pre>
+@inproceedings{saha2021explagraphs,
+  title={{ExplaGraphs}: An Explanation Graph Generation Task for Structured Commonsense Reasoning},
+  author={Saha, Swarnadeep and Yadav, Prateek and Bauer, Lisa and Bansal, Mohit},
+  booktitle={EMNLP},
+  year={2021}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-7">
+  <div class="card card-outline-secondary">
+    <div class="card-header">
+      Leaderboard 
+    </div>
+    <div class="card-body">
+      In order to solve an ExplaGraphs sample, the system must output the stance label (support/counter) and generate the corresponding commonsense explanation graph. Evaluating an explanation graph for semantic correctness is a challenging problem and we develop an initial model-based metric for the same (called SeCA). It gives the percentage of samples where both the stance and the graph are fully correct. However, as with most model-based metrics, they can be exploited by some shortcuts, which is why it is necessary that you also perform human evaluation of the graphs.
+<!--      In order to solve a HoVer example, the system must first retrieve the supporting facts from the entire Wikipedia and predict whether the claim is supported or not. The retrieved facts are evaluated against the ground-truth to yield the exact-match and F1 scores. The HoVer score represents the percentage of total examples where at least one supporting fact from every supporting document is retrieved and the correct label is predicted.-->
+      <table class="table table-responsive">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" rowspan=2 style="width: 7%;"></th>
+            <th scope="col" rowspan=2 style="width: 50%;" class="align-middle text-center">Model</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">Code</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">SeCA&#8593;</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">StCA&#8593;</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">SA&#8593;</th>
+            <th scope="col" rowspan=2 style="width: 50%;" class="align-middle text-center">GBS&#8593;</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">GED&#8595;</th>
+            <th scope="col" rowspan=2 style="width: 10%;" class="align-middle text-center">EA&#8593;</th>
+<!--             <th scope="col" colspan=2 class='text-center'>Ans</th>
+ -->
+<!--            <th scope="col" colspan=2 style="width: 18%;" class='text-center'>Fact Extraction</th>-->
+<!--            <th scope="col" colspan=2 style="width: 15%;" class='text-center'>HoVer Score</th>-->
+          </tr>
+<!--          <tr>-->
+<!--            &lt;!&ndash; <th scope="col" class='text-center'>EM</th>-->
+<!--            <th scope="col" class='text-center'>F<sub>1</sub></th> &ndash;&gt;-->
+<!--            <th scope="col" class='text-center'>EM</th>-->
+<!--            <th scope="col" class='text-center'>F<sub>1</sub></th>-->
+<!--            <th scope="col" class='text-center'>Acc</th>-->
+<!--&lt;!&ndash;             <th scope="col" class='text-center'>F<sub>1</sub></th>-->
+<!-- &ndash;&gt;          </tr>-->
+        </thead>
+        <tbody>
+        <tr style="background:#f4f4f4">
+          <td scope="row" class='align-middle text-center'>-<br>
+            <span class="badge badge-secondary">Sept, 2021</span></td>
+          <td class='align-middle text-center'>Human<br/>
+            <span class="affiliation">UNC Chapel Hill</span><br/><a href="https://arxiv.org/abs/2104.07644" class="paperlink">(Saha, et al. 2020)</a></td>
+          <td class='align-middle text-center'>-</td>
+          <td class='align-middle text-center'>83.5</td>
+          <td class='align-middle text-center'>91.0</td>
+          <td class='align-middle text-center'>91.0</td>
+          <td class='align-middle text-center'>71.1</td>
+          <td class='align-middle text-center'>0.38</td>
+          <td class='align-middle text-center'>46.8</td>
+        </tr>
+        <tr style="background:#f4f4f4">
+          <td scope="row" class='align-middle text-center'>1<br>
+            <span class="badge badge-secondary">Sept, 2021</span></td>
+          <td class='align-middle text-center'>Baseline Model (RE-SP)<br/>
+            <span class="affiliation">UNC Chapel Hill</span><br/><a href="https://arxiv.org/abs/2104.07644" class="paperlink">(Saha, et al. 2020)</a></td>
+          <td class='align-middle text-center'><a href="https://github.com/swarnaHub/ExplaGraphs"><i class="far fa-file-alt"></i></a></td>
+          <td class='align-middle text-center'>20.0</td>
+          <td class='align-middle text-center'>72.5</td>
+          <td class='align-middle text-center'>62.5</td>
+          <td class='align-middle text-center'>50.0</td>
+          <td class='align-middle text-center'>0.60</td>
+          <td class='align-middle text-center'>26.2</td>
+        </tr>
+          <tr style="background:#f4f4f4">
+            <td scope="row" class='align-middle text-center'>2<br>
+              <span class="badge badge-secondary">Sept, 2021</span></td>
+            <td class='align-middle text-center'>Baseline Model (RA-T5)<br/>
+              <span class="affiliation">UNC Chapel Hill</span><br/><a href="https://arxiv.org/abs/2104.07644" class="paperlink">(Saha, et al. 2020)</a></td>
+            <td class='align-middle text-center'><a href="https://github.com/swarnaHub/ExplaGraphs"><i class="far fa-file-alt"></i></a></td>
+            <td class='align-middle text-center'>19.0</td>
+            <td class='align-middle text-center'>87.2</td>
+            <td class='align-middle text-center'>38.7</td>
+            <td class='align-middle text-center'>33.6</td>
+            <td class='align-middle text-center'>0.71</td>
+            <td class='align-middle text-center'>20.8</td>
+          </tr>
+        <tr style="background:#f4f4f4">
+          <td scope="row" class='align-middle text-center'>3<br>
+            <span class="badge badge-secondary">Sept, 2021</span></td>
+          <td class='align-middle text-center'>Baseline Model (RE-T5)<br/>
+            <span class="affiliation">UNC Chapel Hill</span><br/><a href="https://arxiv.org/abs/2104.07644" class="paperlink">(Saha, et al. 2020)</a></td>
+          <td class='align-middle text-center'><a href="https://github.com/swarnaHub/ExplaGraphs"><i class="far fa-file-alt"></i></a></td>
+          <td class='align-middle text-center'>13.5</td>
+          <td class='align-middle text-center'>32.5</td>
+          <td class='align-middle text-center'>69.0</td>
+          <td class='align-middle text-center'>28.3</td>
+          <td class='align-middle text-center'>0.75</td>
+          <td class='align-middle text-center'>17.3</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">Copyright &copy; ExplaGraphs Team, 2021.</p>
+            <p class="copyright text-muted">Theme adapted from Start Bootstrap's <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> template, <a href="https://hotpotqa.github.io/">HotpotQA</a> home page, and <a href="https://hover-nlp.github.io/">HoVer</a> home page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    
+
+  </body>
+
+</html>
